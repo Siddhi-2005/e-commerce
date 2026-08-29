@@ -2,9 +2,9 @@ Bazaarly — Mini E-Commerce Product Catalog
 
 A front-end product catalog app built as Task 5 of the Full Stack Web Development Internship at Maincrafts Technology. Built with plain HTML, CSS, and JavaScript — no frameworks, no backend, no build step.
 
-🔗 Live Demo
 
-(Add your deployed link here — see Deployment section below)
+
+
 
 ✨ Features
 Product listing page — grid layout with image, name, price, and category
