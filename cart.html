@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Bazaarly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html"><span class="mark">◆</span> Bazaarly</a>
+      <nav class="nav-links">
+        <a href="index.html">Catalog</a>
+        <a class="cart-link" href="cart.html">
+          🛒 Cart <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap cart-page">
+    <h1 style="margin-bottom:20px;">Your Cart</h1>
+    <div class="cart-layout" id="cartLayout"></div>
+  </main>
+
+  <footer>Bazaarly — a demo product catalog · Task 5, Full Stack Web Development Internship</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

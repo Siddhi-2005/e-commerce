@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bazaarly — Product Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html"><span class="mark">◆</span> Bazaarly</a>
+      <nav class="nav-links">
+        <a href="index.html">Catalog</a>
+        <a class="cart-link" href="cart.html">
+          🛒 Cart <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Everyday goods, honestly priced</h1>
+      <p>Search, filter and sort a mini catalog of electronics, fashion, grocery, home and beauty picks — then add to your cart.</p>
+    </div>
+  </section>
+
+  <main class="wrap catalog">
+    <aside class="filter-rail">
+      <div class="filter-group">
+        <h3>Category</h3>
+        <ul class="category-list" id="categoryList"></ul>
+      </div>
+    </aside>
+
+    <section>
+      <div class="toolbar">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search products…">
+        </div>
+        <div class="sort-box">
+          <label for="sortSelect" style="font-size:0.85rem; color:var(--ink-soft);">Sort</label>
+          <select id="sortSelect">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A → Z</option>
+            <option value="name-desc">Name: Z → A</option>
+            <option value="rating-desc">Rating: High to Low</option>
+          </select>
+        </div>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </main>
+
+  <footer>Bazaarly — a demo product catalog · Task 5, Full Stack Web Development Internship</footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
